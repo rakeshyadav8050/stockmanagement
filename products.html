@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main full">
+<h1>Products Management</h1>
+
+<div class="product-actions">
+<input type="text" id="productName" placeholder="Product Name">
+<input type="number" id="productPrice" placeholder="Price">
+<button onclick="addProduct()">Add Product</button>
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody id="productTable">
+<tr>
+<td>Laptop</td>
+<td>₹55000</td>
+<td>
+<button onclick="editProduct(this)">Edit</button>
+<button onclick="deleteProduct(this)">Delete</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
